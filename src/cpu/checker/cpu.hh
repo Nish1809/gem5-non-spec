@@ -194,6 +194,14 @@ class CheckerCPU : public BaseCPU, public ExecContext
         return thread->getWritableReg(si->destRegIdx(idx));
     }
 
+    /** Sets the precompute branch structure
+     */
+    void
+    setPCBTB(uint8_t id, Addr addr) override
+    {
+            uint8_t a = id;
+    }
+    
     void
     setRegOperand(const StaticInst *si, int idx, RegVal val) override
     {

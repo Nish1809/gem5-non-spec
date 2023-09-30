@@ -1010,6 +1010,15 @@ class DynInst : public ExecContext, public RefCounted
         return cpu->readMiscReg(misc_reg, threadNumber);
     }
 
+    // Sets the precompute branch structure
+     
+
+    void
+    setPCBTB(uint8_t id, Addr addr) override
+    {
+        uint8_t a = id;
+    }
+
     /** Sets a misc. register, including any side-effects the write
      * might have as defined by the architecture.
      */

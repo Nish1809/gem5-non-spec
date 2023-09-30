@@ -93,6 +93,9 @@ class ExecContext
      */
     virtual RegVal readMiscReg(int misc_reg) = 0;
 
+  
+    virtual void setPCBTB(uint8_t id, Addr addr) = 0;
+
     /**
      * Sets a miscellaneous register, handling any architectural
      * side effects due to writing that register.

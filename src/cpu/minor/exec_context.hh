@@ -158,6 +158,15 @@ class ExecContext : public gem5::ExecContext
         thread.getReg(si->srcRegIdx(idx), val);
     }
 
+    /** Sets the precompute branch structure
+     */
+    void
+    setPCBTB(uint8_t id, Addr addr) override
+    {
+            uint8_t a = id;
+    }
+
+    
     void *
     getWritableRegOperand(const StaticInst *si, int idx) override
     {

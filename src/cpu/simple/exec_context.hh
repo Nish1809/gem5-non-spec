@@ -284,6 +284,14 @@ class SimpleExecContext : public ExecContext
         return cpu->readMem(addr, data, size, flags, byte_enable);
     }
 
+    /** Sets the precompute branch structure
+     */
+    void
+    setPCBTB(uint8_t id, Addr addr) override
+    {
+        uint8_t a = id;
+    }
+    
     Fault
     initiateMemRead(Addr addr, unsigned int size,
                     Request::Flags flags,
