@@ -791,15 +791,15 @@ decode QUADRANT default Unknown::unknown() {
         0x0a: decode FUNCT3 {
             format BranchOp {
                 0x0: bmovs({{
-                    imm = (IMM20 << 5) | IMM5;
+                    //imm = (IMM20 << 5) | IMM5;
                     xc->setPCBTB(0, imm);
                 }});
                 0x1: bmovt({{
-                    imm = (IMM20 << 5) | IMM5;
+                    //imm = (IMM20 << 5) | IMM5;
                     xc->setPCBTB(1, imm);
                 }});
                 0x2: bmovc({{
-                    imm = (IMM20 << 5) | IMM5;
+                    //imm = (IMM20 << 5) | IMM5;
                     xc->setPCBTB(2, imm);
                 }});
             }
